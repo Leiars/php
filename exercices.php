@@ -14,7 +14,8 @@
  
             echo 'Les chiffres impairs compris entre '.$min.' et '.$max.' sont:';
         
-            for($i = $min; $i < $max ; $i=$i+2){
+            for($i = $min; $i < $max ; $i=$i+2)
+            {
              echo $i.' ';
             }
         ?>  

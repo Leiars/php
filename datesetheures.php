@@ -30,11 +30,9 @@
 
             ?>
             
-        <br><br>
-
             <?php
 
-        // on déclare une instance de l'objet PHP 'DateTime' :
+                 // On déclare une instance de l'objet PHP 'DateTime' :
 
              $oDate = new DateTime();
         
@@ -54,11 +52,11 @@
 
             <?php
 
-        // $macolonne_sql est issue d'une requête SQL; avec pour valeur 2018-11-16 11:26:51 (parexemple)
+                  // $macolonne_sql est issue d'une requête SQL; avec pour valeur 2018-11-16 11:26:51 (parexemple)
         
                 $macolonne_sql = "2018-11-16 11:26:51";
                 $oDate = new DateTime($macolonne_sql);
-                echo $oDate->format("d/m/Y H:i");
+                   echo $oDate->format("d/m/Y H:i");
 
             ?>
 
@@ -88,7 +86,8 @@
 
                 $errors = DateTime::getLastErrors();
 
-                if ($errors["error_count"]>0 || $errors["warning_count"]>0) {
+                if ($errors["error_count"]>0 || $errors["warning_count"]>0) 
+                {
                     echo "ARGHHHH !";
                 }
 
